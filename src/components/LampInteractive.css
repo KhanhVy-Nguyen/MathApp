@@ -1,0 +1,112 @@
+.lamp-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+}
+
+.lamp-wire {
+  width: 4px;
+  height: 100px;
+  background-color: #333;
+  box-shadow: inset 1px 0 2px rgba(255, 255, 255, 0.2);
+}
+
+.lamp-shade {
+  width: 120px;
+  height: 60px;
+  background-color: #f1c40f; /* Yellow lamp */
+  border-radius: 60px 60px 0 0;
+  position: relative;
+  box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.lamp-shade.on {
+  box-shadow: 
+    inset -10px -10px 20px rgba(0, 0, 0, 0.2),
+    0 20px 60px 20px rgba(241, 196, 15, 0.6); /* Glow effect */
+}
+
+.lamp-shade::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 20px;
+  background-color: #e6b800;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.lamp-bulb {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #444; /* Bulb off */
+  border-radius: 50%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: -2;
+}
+
+.lamp-shade.on .lamp-bulb {
+  background-color: #fffacd; /* Bulb on */
+  box-shadow: 0 0 40px 20px rgba(255, 250, 205, 0.8);
+}
+
+.pull-chain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+}
+
+.chain-link {
+  width: 6px;
+  height: 6px;
+  background-color: #bdc3c7;
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+
+.chain-handle {
+  width: 14px;
+  height: 24px;
+  background-color: #7f8c8d;
+  border-radius: 7px;
+  margin-top: 4px;
+}
+
+.pull-chain:hover .chain-handle {
+  background-color: #95a5a6;
+}
+
+.pull-chain.pulling {
+  animation: pullDown 0.3s ease;
+}
+
+@keyframes pullDown {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(20px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}

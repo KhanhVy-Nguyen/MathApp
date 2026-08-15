@@ -1,0 +1,21 @@
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.left-panel {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.right-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
