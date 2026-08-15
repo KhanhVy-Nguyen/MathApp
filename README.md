@@ -1,16 +1,25 @@
-# React + Vite
+# MathApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+MathApp is a simple, interactive web-based application designed to help elementary school students practice and improve basic arithmetic skills: addition, subtraction, multiplication, and division.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Overview
 
-## React Compiler
+MathApp offers a clean, distraction-free environment tailored for young learners. It focuses on core arithmetic operations with flexible practice modes to suit different learning paces.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- Basic Arithmetic Practice: Supports addition (+), subtraction (-), multiplication (×), and division (÷).
+- Dual Practice Modes:
+  - Timed Mode: Challenge students to solve problems against the clock to build speed and quick mental calculation.
+  - Untimed Mode: Relaxed practice mode allowing students to solve problems at their own pace without time pressure.
+- Interactive Access Feature: Features a playful "turn on the lamp" mechanism to unlock or log into the application upon opening.
+- Minimalist and Child-Friendly UI: Clean, straightforward, and easy-to-navigate interface designed specifically for primary school students.
+
+---
+
+
+
