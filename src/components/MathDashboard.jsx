@@ -111,7 +111,7 @@ const MathDashboard = ({ userName }) => {
   return (
     <div className="dashboard-container">
       <header className="dashboard-header">
-        <h1>Welcome, {userName}!</h1>
+        <h1>Welcome, {userName.charAt(0).toUpperCase() + userName.slice(1)}!</h1>
         <div className="header-stats">
           <p>Score: {score}</p>
           

@@ -13,6 +13,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+[data-theme="ocean"] {
+  --color-light: #006994;
+}
+
+[data-theme="forest"] {
+  --color-light: #365004;
+}
+
+[data-theme="purple"] {
+  --color-light: #bf93d0;
+}
+
+[data-theme="rose"] {
+  --color-light: #eeb9b8;
+}
+
+[data-theme="default"] {
+  --color-light: #ab7743;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
